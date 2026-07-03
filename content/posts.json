@@ -1,0 +1,42 @@
+[
+  {
+    "id": "making-space-for-attention",
+    "title": "On making space for attention",
+    "excerpt": "What it means to protect quiet time in a noisy world, and why that practice can sharpen both work and thought.",
+    "date": "2026-07-03",
+    "year": "2026",
+    "topic": "Creativity",
+    "featured": true,
+    "readingTime": "5 min read"
+  },
+  {
+    "id": "weekend-in-the-city",
+    "title": "Three ideas from a weekend in the city",
+    "excerpt": "A short reflection on walks, cafes and the surprising value of slowing down long enough to notice.",
+    "date": "2026-06-18",
+    "year": "2026",
+    "topic": "Culture",
+    "featured": true,
+    "readingTime": "3 min read"
+  },
+  {
+    "id": "quieter-digital-practice",
+    "title": "Building a quieter digital practice",
+    "excerpt": "Notes on experiments, workflows and the small routines that help keep creative work calm and intentional.",
+    "date": "2026-05-02",
+    "year": "2026",
+    "topic": "Technology",
+    "featured": false,
+    "readingTime": "4 min read"
+  },
+  {
+    "id": "notes-on-reading",
+    "title": "Notes on reading slowly",
+    "excerpt": "Why returning to a few books with care can feel more generous than consuming everything at once.",
+    "date": "2025-11-14",
+    "year": "2025",
+    "topic": "Culture",
+    "featured": false,
+    "readingTime": "4 min read"
+  }
+]

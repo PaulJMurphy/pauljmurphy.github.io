@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse Paul Murphy's archive of essays, notes and projects." />
+    <title>Archive | Paul Murphy</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="archive-header">
+      <nav class="top-nav archive-nav">
+        <a href="index.html" class="brand">Paul Murphy</a>
+        <div class="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="archive.html" class="active">Archive</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="archive-intro">
+        <p class="eyebrow">Archive</p>
+        <h1>Browse the writing archive.</h1>
+        <p>
+          A simple home for essays, notes and projects, organised for easy browsing as the collection grows.
+        </p>
+      </div>
+    </header>
+
+    <main class="archive-page">
+      <section class="archive-toolbar section">
+        <div class="search-group">
+          <label for="search-input">Search</label>
+          <input id="search-input" type="search" placeholder="Search essays, notes or projects" />
+        </div>
+        <div class="filter-group">
+          <label for="topic-filter">Topic</label>
+          <select id="topic-filter">
+            <option value="all">All topics</option>
+            <option value="Culture">Culture</option>
+            <option value="Creativity">Creativity</option>
+            <option value="Technology">Technology</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="year-filter">Year</label>
+          <select id="year-filter">
+            <option value="all">All years</option>
+            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+        <div class="view-toggle" role="group" aria-label="Choose archive view">
+          <button class="view-btn active" data-view="list" type="button">List</button>
+          <button class="view-btn" data-view="card" type="button">Card</button>
+        </div>
+      </section>
+
+      <section id="featured-posts" class="featured-posts section" aria-label="Featured entries"></section>
+
+      <section id="archive-list" class="archive-list section" data-view="list">
+        <div id="archive-items" class="archive-items"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Paul Murphy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
