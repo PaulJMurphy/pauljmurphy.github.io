@@ -2,13 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>365-evergreen-web</title>
+    <meta
+      name="description"
+      content="Paul Murphy’s showcase blog featuring writing, ideas, and reflections."
+    />
+    <title>Paul Murphy</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="hero">
+      <nav class="top-nav">
+        <a href="#about" class="brand">Paul Murphy</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#notes">Notes</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Showcase blog</p>
+        <h1>Stories, thinking, and work in progress.</h1>
+        <p class="hero-copy">
+          I write about culture, creativity, technology and the small decisions that shape a life well lived.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact">Get in touch</a>
+          <a class="button secondary" href="#notes">Read the notes</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Paul Murphy writes with curiosity and care.</h2>
+        </div>
+        <p>
+          This space is a personal showcase for essays, observations and projects that matter to me.
+          It is a place to share ideas in progress, reflect on the world, and invite thoughtful conversation.
+        </p>
+      </section>
+
+      <section id="notes" class="section cards">
+        <article class="card">
+          <h3>Essays</h3>
+          <p>Longer pieces on craft, attention, and the habits that make work feel meaningful.</p>
+        </article>
+        <article class="card">
+          <h3>Reflections</h3>
+          <p>Short notes on reading, travel, technology and the everyday moments worth keeping.</p>
+        </article>
+        <article class="card">
+          <h3>Projects</h3>
+          <p>A window into current work, experiments and ideas that are still taking shape.</p>
+        </article>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Get in touch</h2>
+        </div>
+        <p>
+          Email: paul@paulmurphy.uk<br />
+          Location: London, United Kingdom
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Paul Murphy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
 
