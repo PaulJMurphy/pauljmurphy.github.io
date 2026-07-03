@@ -57,7 +57,7 @@ img {
 }
 
 .top-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   display: flex;
