@@ -1,0 +1,32 @@
+[
+  {
+    "id": "home",
+    "type": "page",
+    "title": "Home",
+    "slug": "/",
+    "excerpt": "Welcome to Paul Murphy's writing space.",
+    "content": "<h2>Stories, thinking, and work in progress.</h2><p>This space is a personal showcase for essays, observations and projects that matter to me.</p>",
+    "date": "2026-07-04",
+    "featured": false
+  },
+  {
+    "id": "about",
+    "type": "page",
+    "title": "About",
+    "slug": "about",
+    "excerpt": "A short note about the work and perspective behind this site.",
+    "content": "<h2>Paul Murphy writes with curiosity and care.</h2><p>This space is a home for ideas in progress, thoughtful reflection and projects that are still taking shape.</p>",
+    "date": "2026-07-04",
+    "featured": false
+  },
+  {
+    "id": "contact",
+    "type": "page",
+    "title": "Contact",
+    "slug": "contact",
+    "excerpt": "How to get in touch.",
+    "content": "<h2>Get in touch</h2><p>Email: paul@paulmurphy.uk</p><p>Location: London, United Kingdom</p>",
+    "date": "2026-07-04",
+    "featured": false
+  }
+]
