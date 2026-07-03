@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Edit pages and posts for Paul Murphy's site." />
+    <title>Editor | Paul Murphy</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="editor-page">
+    <header class="archive-header editor-header">
+      <nav class="top-nav archive-nav">
+        <a href="index.html" class="brand">Paul Murphy</a>
+        <div class="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="archive.html">Archive</a>
+          <a href="editor.html" class="active">Editor</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="archive-intro">
+        <p class="eyebrow">CMS</p>
+        <h1>Compose and manage pages and posts.</h1>
+        <p>
+          Use the WYSIWYG editor to draft new pages and posts, then save locally so the archive can pick up your updates.
+        </p>
+      </div>
+    </header>
+
+    <main class="editor-shell" data-editor-root>
+      <aside class="editor-sidebar section">
+        <div class="editor-sidebar-actions">
+          <button id="new-page" class="button secondary" type="button">New page</button>
+          <button id="new-post" class="button primary" type="button">New post</button>
+        </div>
+        <div id="entry-list" class="entry-list" aria-label="Pages and posts"></div>
+        <button id="export-data" class="button secondary full-width" type="button">Export JSON</button>
+      </aside>
+
+      <section class="editor-workspace section">
+        <div class="editor-toolbar" role="toolbar" aria-label="Rich text toolbar">
+          <button type="button" data-command="bold">Bold</button>
+          <button type="button" data-command="italic">Italic</button>
+          <button type="button" data-command="insertUnorderedList">List</button>
+          <button type="button" data-command="formatBlock" data-value="h2">H2</button>
+          <button type="button" data-command="createLink">Link</button>
+        </div>
+
+        <div class="editor-form-grid">
+          <label class="editor-field">
+            <span>Title</span>
+            <input id="entry-title" type="text" placeholder="Enter a title" />
+          </label>
+          <label class="editor-field">
+            <span>Slug</span>
+            <input id="entry-slug" type="text" placeholder="page-slug" />
+          </label>
+          <label class="editor-field">
+            <span>Type</span>
+            <select id="entry-type">
+              <option value="page">Page</option>
+              <option value="post">Post</option>
+            </select>
+          </label>
+          <label class="editor-field">
+            <span>Date</span>
+            <input id="entry-date" type="date" />
+          </label>
+          <label class="editor-field">
+            <span>Topic</span>
+            <input id="entry-topic" type="text" placeholder="Culture" />
+          </label>
+          <label class="editor-field checkbox-field">
+            <input id="entry-featured" type="checkbox" />
+            <span>Feature this item</span>
+          </label>
+        </div>
+
+        <label class="editor-field">
+          <span>Excerpt</span>
+          <textarea id="entry-excerpt" rows="3" placeholder="A short summary for the archive"></textarea>
+        </label>
+
+        <div id="editor-content" class="content-editor" contenteditable="true">
+          Start writing your page or post here.
+        </div>
+
+        <div class="editor-actions">
+          <button id="save-entry" class="button primary" type="button">Save locally</button>
+          <button id="delete-entry" class="button secondary" type="button">Delete</button>
+          <p id="editor-status" class="editor-status">Choose an item to start editing.</p>
+        </div>
+
+        <div class="preview-card">
+          <p class="eyebrow">Preview</p>
+          <div id="preview-frame"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Paul Murphy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
